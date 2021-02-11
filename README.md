@@ -10,6 +10,10 @@
 Command-line tool to customize Spotify client.
 Supports Windows, MacOS and Linux.
 
+This fork's sole purpose is to tweak the method in how spicetify restarts spotify to only target the client.
+Right now, if I have spotifyd running as well as the desktop spotify application and I try applying a theme, it ends up killing up processes.
+This is a major pain considering the reason why I installed spotifyd in the first place was to have an un-interuptted listening experience when switching between themes.
+
 ### Features
 - Change colors whole UI
 - Inject CSS for advanced customization
