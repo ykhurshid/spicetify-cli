@@ -26,7 +26,7 @@ func RestartSpotify(flags ...string) {
 			exec.Command(filepath.Join(spotifyPath, "spotify.exe"), flags...).Start()
 		}
 	case "linux":
-		exec.Command("pkill", "spotify").Run()
+		exec.Command("pkill", "--exact", "spotify").Run()
 		exec.Command(filepath.Join(spotifyPath, "spotify"), flags...).Start()
 	case "darwin":
 		exec.Command("pkill", "Spotify").Run()
